@@ -16,15 +16,11 @@ table {
 	margin: auto;
 }
 
-#button {
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-}
+
 </style>
 </head>
 <body>
-<<<<<<< Updated upstream
+
 	
 	
 	<table border=1>
@@ -36,28 +32,8 @@ table {
 	</tr> 
 	</c:forEach>
 	</table>
-=======
-	<table border="1">
-		<table border="1">
-			<c:forEach var="item" items="${result}">
-				<tr>
-					<td>${item.seq}</td>
-					<td><input type="text" name="message" readonly value="${item.message}"></td>
-					<td><input type="text" name="name" readonly value="${item.name }"></td>
-				</tr>
-			</c:forEach>
-			<tr>
-				<td colspan="3"><button id="button" type="button">Index</button></td>
-			</tr>
-		</table>
-	</table>
-	<script>
-	document.getElementById("button").onclick = function(){
-		location.href="index.jsp";
-		
-	}
-	</script>
->>>>>>> Stashed changes
+
+
 
 </body>
 </html>
