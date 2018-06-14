@@ -4,9 +4,35 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>정보 입력</title>
+<style type="text/css">
+	table{
+		margin: auto;
+	}
+
+</style>
+<script>
+	window.onload = function(){
+		document.getElementById("input").onclick =function(){
+			location.href ="input.jsp";
+		}
+		document.getElementById("output").onclick =function(){
+			location.href ="output.jsp";
+		}
+	}
+
+</script>
+
 </head>
 <body>
-
+		<table border="1">
+			<tr>
+			<th colspan="2">정보입력</th>
+			</tr>
+			<tr>
+			<td><input type="button" id ="input" value="Input"></td>
+			<td><input type="button" id ="output"value="Output"></td>
+			</tr>		
+		</table>
 </body>
 </html>
