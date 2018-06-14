@@ -10,14 +10,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>메세지 출력</title>
-<style>
-table {
-	margin: auto;
-}
+<title>Insert title here</title>
 
+		
+		<style>
+			
+			
+			table{
+				margin: auto;
+			}
+			
+			
+		
+		</style>
 
-</style>
 </head>
 <body>
 
@@ -30,7 +36,12 @@ table {
 		<td>${item.name}
 		<td>${item.message}
 	</tr> 
+	
 	</c:forEach>
+	
+		<tr>
+			<td colspan=3 align=center><button id="">Back!!</button>
+		</tr>
 	</table>
 
 
