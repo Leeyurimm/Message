@@ -17,6 +17,9 @@ import kh.web.dto.MessageDTO;
 public class FrontController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
+			request.setCharacterEncoding("utf8");
+			response.setCharacterEncoding("utf8");
+			
 			String requestURI = request.getRequestURI();
 			String contextPath = request.getContextPath();
 			String realPath = requestURI.substring(contextPath.length());
